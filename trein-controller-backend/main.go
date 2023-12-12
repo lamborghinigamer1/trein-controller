@@ -130,6 +130,10 @@ type SoundInfo struct {
 }
 
 func getSounds(w http.ResponseWriter, r *http.Request) {
+	mu.Lock()
+	defer mu.Unlock()
+	// Set CORS headers
+	enableCors(&w)
 	folderPath := "."
 
 	fileInfo, err := os.ReadDir(folderPath)

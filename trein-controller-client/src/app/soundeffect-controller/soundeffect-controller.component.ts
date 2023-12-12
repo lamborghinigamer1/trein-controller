@@ -13,8 +13,8 @@ interface Sound {
   styleUrls: ['./soundeffect-controller.component.css']
 })
 export class SoundeffectControllerComponent implements OnInit {
-  private urlgetsounds: string = 'http://localhost:8080/allsounds';
-  private url: string = 'http://localhost:8080/playsound';
+  private urlgetsounds: string = 'http://192.168.0.147:8080/allsounds';
+  private url: string = 'http://192.168.0.147:8080/playsound';
   public mp3s: string[] = [];
 
   ngOnInit() {

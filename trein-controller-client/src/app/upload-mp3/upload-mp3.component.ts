@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './upload-mp3.component.css'
 })
 export class UploadMp3Component {
-  private url: string = 'http://localhost:8080/upload';
+  private url: string = 'http://192.168.0.147:8080/upload';
   public selectedFile: File | null = null;
 
   onFileSelected(event: any) {
