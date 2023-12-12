@@ -1,0 +1,6 @@
+<div>
+    <h2>List of soundeffects</h2>
+    <ul class="soundeffectlist">
+        <li class="soundeffectitem" *ngFor="let mp3 of mp3s"><button (click)="fetchurl(mp3)">{{ mp3 }}</button></li>
+    </ul>
+</div>

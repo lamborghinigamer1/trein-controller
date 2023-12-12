@@ -1,0 +1,45 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.soundeffectlist {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.soundeffectitem {
+    width: calc(100% - 2%);
+    height: calc(100px - 1vh);
+    max-width: 400px;
+    max-height: 400px;
+}
+
+.soundeffectitem button {
+    width: 100%;
+    height: 100%;
+    font-size: 2vh;
+}
+
+@media screen and (max-width: 720px) {
+    .soundeffectlist {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+    }
+    .soundeffectitem button {
+        width: 100%;
+        height: 100%;
+        font-size: 16px;
+    }
+}
