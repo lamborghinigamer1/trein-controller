@@ -47,6 +47,11 @@ func handleFileUpload(w http.ResponseWriter, r *http.Request) {
 
 	// Create a temporary file within our temp-images directory that follows
 	// a particular naming pattern
+
+	if !strings.HasSuffix(handler.Filename, ".mp3") {
+		return
+	}
+	
 	tempFile, err := os.Create(handler.Filename)
 	if err != nil {
 		fmt.Println(err)
